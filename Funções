@@ -1,0 +1,17 @@
+//Adicionei algumas coisas que andei pesquisando ao decorrer do curso quando surgia duvidas
+//Funções
+function soma(a, b) {
+    return a + b;
+}
+-----------------------------
+const numeros = [1, 2, 3];
+const novosNumeros = [...numeros, 4]; 
+-----------------------------
+const saudacao = nome => `Olá, ${nome}!`;
+console.log(saudacao("Maria")); // Olá, Maria!
+-----------------------------
+const dobra = x => x * 2;
+const incrementa = x => x + 1;
+const processaNumero = x => incrementa(dobra(x));
+console.log(processaNumero(5)); // 11
+-----------------------------
