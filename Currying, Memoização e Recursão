@@ -1,0 +1,20 @@
+//Currying
+const soma = a => b => a + b;
+console.log(soma(2)(3)); // 5
+-----------------------------
+//Memoização
+const memoiza = fn => {
+    const cache = {};
+    return x => {
+        if (cache[x]) return cache[x];
+        cache[x] = fn(x);
+        return cache[x];
+    };
+};
+
+const fatorial = memoiza(n => (n <= 1 ? 1 : n * fatorial(n - 1)));
+console.log(fatorial(5)); // 120
+-----------------------------
+//Recursão
+const fatorial = n => (n <= 1 ? 1 : n * fatorial(n - 1));
+console.log(fatorial(5)); // 120
