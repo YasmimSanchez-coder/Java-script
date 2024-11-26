@@ -12,4 +12,11 @@ console.log(pares);
 const numeros = [1, 2, 3, 4];
 const soma = numeros.reduce((total, n) => total + n, 0);
 console.log(soma); // 10
+-----------------------------
+//HOFs
+function executar(fn, valor) {
+    return fn(valor);
+}
 
+const dobrar = x => x * 2;
+console.log(executar(dobrar, 5)); // 10
