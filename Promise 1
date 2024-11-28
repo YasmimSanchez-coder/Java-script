@@ -1,0 +1,11 @@
+const primeiroElemento = array0uString => array0uString [0]
+const letraMinuscula letra => letra.toLowerCase()
+
+new Promise(function(cumprirPromessa) {
+ cumprirPromessa (['Ana', 'Bia', 'Carlos', 'Daniel'])
+})
+
+ .then(primeiroElemento)
+ .then(primeiraLetra)
+ .then(letraMinuscula)
+ .then(console.log)
